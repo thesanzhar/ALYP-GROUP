@@ -118,6 +118,136 @@ section .container {
 }
 /* Standard buttons end */
 
+/* Stantard Page style */
+.page {
+  padding: 30px 0;
+}
+
+.page .container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.page-header {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.page-path {
+  margin-bottom: 30px;
+}
+
+.page-path {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.page-path-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  color: var(--black-color);
+}
+
+.page-path-link.path-active {
+  color: var(--main-color-1);
+}
+
+.page-path li:not(:last-child) .page-path-link:after {
+  position: relative;
+  content: "";
+  margin: 0 15px 0 10px;
+  width: 7px;
+  height: 10px;
+  background: url(../img/icons/ic-path-arrow.svg) no-repeat 50%/contain;
+  display: inline-block;
+}
+
+.page-path-link.isActive {
+  color: var(--main1);
+}
+
+.page-title h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 40px;
+  line-height: 135%;
+  letter-spacing: 0.02em;
+  color: var(--text1);
+  margin: 0;
+}
+
+.page-pag {
+  display: flex;
+  padding: 5px 14px;
+  gap: 5px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  background: #FAFAFA;
+  width: fit-content;
+}
+
+.page-pag-left-btn,
+.page-pag-right-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  background: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.page-pag-left-btn:hover,
+.page-pag-right-btn:hover {
+  background: #DBDBDB;
+}
+
+.page-pag-body {
+  display: flex;
+  gap: 5px;
+}
+
+.page-page-number {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 120%;
+  color: #9C9C9C;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+.page-page-number:hover {
+  background: #DBDBDB;
+  color: #9C9C9C;
+}
+
+.page-page-number.isActive {
+  background: var(--main1);
+  color: var(--text1);
+}
+
+@media (max-width: 991px) {
+
+}
+
+@media (max-width: 768px) { 
+
+}
 
 @media (max-width: 500px) {
   .text-medium1 {
@@ -133,4 +263,18 @@ section .container {
   .title2  {
     font-size: 23px;
   }
+  .page-header {
+    gap: 20px;
+  }
+  .page .container {
+    gap: 20px;
+  }
+  .page-title h1 {
+    font-size: 28px;
+    line-height: 120%;
+  }
+}
+
+@media (max-width: 350px) {
+  
 }
