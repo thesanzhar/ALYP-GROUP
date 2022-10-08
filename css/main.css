@@ -1,3 +1,57 @@
+@font-face {
+  font-family:"SF Pro Display";
+  src:url("../fonts/SFProDisplay-Regular.woff");
+  src:local("â˜º"),
+      url("../fonts/SFProDisplay-Regular.woff")
+      format("woff"),
+      url("../fonts/SFProDisplay-Regular.ttf")
+      format("truetype"),
+      url("../fonts/SFProDisplay-Regular.svg")
+      format("svg");
+  font-weight:400;
+  font-style:normal;
+}
+
+@font-face {
+  font-family:"SF Pro Display";
+  src:url("../fonts/SFProDisplay-Medium.woff");
+  src:local("â˜º"),
+  url("../fonts/SFProDisplay-Medium.woff");
+format("woff");
+  font-weight:500;
+  font-style:normal;
+}
+
+@font-face {
+  font-family:"SF Pro Display";
+  src:url("../fonts/SFProDisplay-Bold.woff");
+  src:local("â˜º"),
+  url("../fonts/SFProDisplay-Bold.woff");
+format("woff");
+  font-weight:700;
+  font-style:normal;
+}
+
+@font-face {
+  font-family:"SF Pro Display";
+  src:url("../fonts/SFProDisplay-Heavy.woff");
+  src:local("â˜º"),
+  url("../fonts/SFProDisplay-Heavy.woff");
+format("woff");
+  font-weight:800;
+  font-style:normal;
+}
+
+@font-face {
+  font-family:"SF Pro Display";
+  src:url("../fonts/SFProDisplay-Black.woff");
+  src:local("â˜º"),
+  url("../fonts/SFProDisplay-Black.woff");
+  format("woff");
+  font-weight:900;
+  font-style:normal;
+}
+
 * {
   font-family: 'SF Pro Display', sans-serif;
   margin: 0;
@@ -55,6 +109,7 @@ section .container {
   font-size: 40px;
   line-height: 135%;
   letter-spacing: 0.02em;
+  margin: 0;
 }
 
 .title2 {
@@ -63,6 +118,7 @@ section .container {
   font-size: 32px;
   line-height: 135%;
   letter-spacing: 0.02em;
+  margin: 0;
 }
 
 .text-medium1 {

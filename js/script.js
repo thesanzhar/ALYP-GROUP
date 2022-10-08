@@ -52,7 +52,7 @@ window.onclick = function(e) {
 
 
 // SLIDERS
-// 1. MAIN IMAGE
+// 1. OWNERS
 var ownersSwiper = new Swiper(".ownersSwiper", {
   spaceBetween: 30,
   loop: 0,
@@ -73,6 +73,20 @@ var ownersSwiper = new Swiper(".ownersSwiper", {
   navigation: {
     nextEl: ".swiper-button-next-1",
     prevEl: ".swiper-button-prev-1",
+  },
+});
+// 2. COFOUNDER
+var cofounderSwiper = new Swiper(".cofounderSwiper", {
+  spaceBetween: 30,
+  loop: 0,
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+    },
+  },
+  navigation: {
+    nextEl: ".swiper-button-next-2",
+    prevEl: ".swiper-button-prev-2",
   },
 });
 
