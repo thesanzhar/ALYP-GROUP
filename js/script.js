@@ -14,42 +14,6 @@ $(document).ready(function() {
 });
 
 
-// LANGUAGE DROPDOWN
-function dropdownFunc() {
-  document.getElementById("lang-dropdown").classList.toggle("dropdown-show");
-}
-
-window.onclick = function(e) {
-  if (!e.target.matches(".header__lang")) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for(i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if(openDropdown.classList.contains("dropdown-show")) {
-        openDropdown.classList.remove("dropdown-show");
-      }
-    }
-  }
-}
-
-// LANGUAGE DROPDOWN
-function dropdownFunc2() {
-  document.getElementById("lang-dropdown-2").classList.toggle("dropdown-show");
-}
-
-window.onclick = function(e) {
-  if (!e.target.matches(".header__lang")) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for(i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if(openDropdown.classList.contains("dropdown-show")) {
-        openDropdown.classList.remove("dropdown-show");
-      }
-    }
-  }
-}
-
 
 // SLIDERS
 // 1. OWNERS
@@ -90,17 +54,3 @@ var cofounderSwiper = new Swiper(".cofounderSwiper", {
   },
 });
 
-// MASK PHONE INPUT
-var phoneMask = IMask(
-  document.getElementById('order-call__customer-tel'), {
-    mask: '+{7}(000)000-00-00',
-  });
-  document.getElementById("order-call__form").addEventListener('submit', function(e) {
-  e.preventDefault()
-  let phone =  document.getElementById('order-call__customer-tel')
-  if(phone.value.length < 16){
-    phone.style.border = '1px solid red';
-    return
-  }
-  this.submit()
-})

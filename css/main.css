@@ -102,6 +102,11 @@ section .container {
   overflow: hidden;
 }
 
+.container-std {
+  max-width: 1075px;
+  margin: 0 auto;
+}
+
 /* Standard text */
 .title1 {
   font-style: normal;
@@ -210,7 +215,11 @@ section .container {
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;
-  color: var(--black-color);
+  color: var(--black);
+}
+
+.page-path-link:hover {
+  color: var(--black);
 }
 
 .page-path-link.path-active {
@@ -297,12 +306,31 @@ section .container {
   color: var(--text1);
 }
 
-@media (max-width: 991px) {
 
+@media (max-width: 1400px) {
+  .container-std {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1200) {
+
+}
+@media (max-width: 1024) {
+
+}
+@media (max-width: 991px) {
+  .container-std {
+    max-width: 700px;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 768px) { 
-
+  .container-std {
+    max-width: 500px;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 500px) {
@@ -329,8 +357,30 @@ section .container {
     font-size: 28px;
     line-height: 120%;
   }
+  .container-std {
+    max-width:400px;
+    margin: 0 auto;
+  }
 }
 
+@media (max-width: 450px) {
+  .container-std {
+    max-width:400px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 400px) {
+  .container-std {
+    max-width:350px;
+    margin: 0 auto;
+  }
+}
 @media (max-width: 350px) {
+  .container-std {
+    max-width:300px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 320px) {
   
 }
